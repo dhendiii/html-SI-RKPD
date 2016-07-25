@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/additional.css">
+
+    <title> Musrenbang Cimahi </title>
+</head>
+
+<body>
+    <!--navbar -->
+    <div class="container-fluid page-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar" style="background-color: #337ab7;"></span>
+                        <span class="icon-bar" style="background-color: #337ab7;"></span>
+                        <span class="icon-bar" style="background-color: #337ab7;"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Musrenbang Kota Cimahi</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Beranda</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Masuk/Daftar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--main body -->
+    <div class="container">
+
+        <!-- navigasi hasil post -->
+        <div class="row pagetitle">
+            <div class="container-fluid">
+                <ol class="breadcrumb bread-costum" style="">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- left side bar -->
+        <div class="col-md-3 pull-right sidebar">
+            <h4>Cari rancangan/ usulan</h4>
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Kata kunci">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+
+            <h4>Tambah Usulan</h4>
+            <button type="button" class="btn btn-primary btn-block" style="text-align:left">
+                Tambah Usulan <span class=" glyphicon glyphicon-plus pull-right"></span>
+            </button>
+            <hr>
+        </div>
+
+        <!--draft detail starts here -->
+        <div class="col-md-9 pull-left">
+
+            <!--draft -->
+            <div class="row">
+
+                <div class="row draft-detail card-border">
+                    <h4>Usulan/ Rancangan</h4>
+                    <div class="col-sm-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis. <strong>Lokasi : </strong><span class="location">Cibeber, Cimahi Selatan</span>
+                            </div>
+                            <div class="row row-posted">
+                                <strong>Diusulkan oleh : </strong><a href=# class="usrname-mas">John</a>
+                                <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span>
+                            </div>
+                            <div class="row row-tags">
+                                <a href="#" class="label label-usulan">Usulan</a>
+                                <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a>
+                                <a href="#" class="label label-tag" data-toggle="tooltip" >#tag1</a>
+                                <a href="#" class="label label-tag" data-toggle="tooltip" >#tag2</a>
+                                <a href="#" class="label label-tag" data-toggle="tooltip" >#tag3</a>
+                            </div>
+                            <div class="row row-bottomlink">
+                                <ul class="list-inline" style="margin-bottom:2px">
+                                    <li><a href="#"class="">10 informasi</a> </li>
+                                    <li><a href="#"class="">10 komentar</a> </li>
+                                    <li>
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 100</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- draft ends here -->
+
+            <!-- progress -->
+            <div class="row">
+
+                <div class="row draft-detail card-border">
+                    <h4>Progres</h4>
+
+                    <div class="row row-tight">
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Hasil verifikasi*</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Tidak lolos verifikasi <br>
+                                <span class="">
+                                    <a href="#edit-verifikasi" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-verifikasi">
+                                    <div class="form-group">
+                                        <select class="form-control" id="verifikasi">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="btnCancel" name="btnCancel" class="btn btn-primary">Cancel</button>
+                                        <button id="btnSave" name="btnSave" class="btn btn-success">Save</button>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Ket. verifikasi*</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Lorem ipsum dolor sir amet Lorem ipsum dolor sir amet Lorem ipsum dolor sir amet  <br>
+                                <span>
+                                    <a href="#edit-verifikasi_ket" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-verifikasi_ket">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row row-tight">
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Hasil forum*</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Masuk tahap berikutnya <br>
+                                <span>
+                                    <a href="#edit-hasil" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-hasil">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Realisasi*</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Sudah, tahun 1991  <br>
+                                <span>
+                                    <a href="#edit-realisasi" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-realisasi">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- progress ends here -->
+
+            <!-- infos & comments -->
+            <div class="row">
+
+                <div class="row draft-detail card-border">
+                    <h4>Informasi <span class="small">minimal untuk rancangan awal</span></h4>
+
+                    <div class="row row-tight">
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Jenis kegiatan</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Baru <br>
+                                <span>
+                                    <a href="#edit-hasil" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-hasil">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Sumber Dana*</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                RAB <br>
+                                <span>
+                                    <a href="#edit-realisasi" class=" small" data-toggle="collapse">Edit</a>
+                                </span>
+                                <span class="collapse" id="edit-realisasi">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-tight">
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Indikator kinerja program</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                <p>
+                                    Terciptanya sarana dan prasana yang menanggulangi banjir didaerah pinggir sungai
+                                    | <span>200</span>
+                                    <span>m</span>
+                                    <!-- <label class="label label-verified-yet">Belum terverifikasi</label> -->
+                                    <br>
+                                    <span class="row-posted">
+                                        <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                        <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                        <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> &nbsp;
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                    </span>
+                                    <br>
+                                    <a href="#edit-verifikasi" class=" small" data-toggle="collapse">2 informasi</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Asumsi biaya</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                <span>Rp </span>1.000.000.000
+                                <br>
+                                <span class="row-posted">
+                                    <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                    <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                    <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> &nbsp;
+                                    <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                    <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                </span>
+                                <br>
+                                <a href="#edit-verifikasi" class=" small" data-toggle="collapse">2 informasi</a>
+                                <span class="collapse" id="edit-verifikasi_ket">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h4>Informasi <span class="small">pelengkap untuk dipertimbangkan</span></h4>
+
+                    <div class="row row-tight">
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Proposal</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                <p>
+                                    Tidak ada proposal
+                                    <br>
+                                    <a href="#edit-verifikasi" class=" small" data-toggle="collapse">0 informasi</a>
+                                </p>
+
+
+                                <span class="">
+
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row row-tight"> -->
+                        <div class="col-sm-6">
+                            <div class="col-sm-3 col-xs-3">
+                                <label class="control-label">Catatan lainnya</label>
+                            </div>
+                            <div class="col-sm-9 col-xs-9 add-padding-bottom">
+                                Tidak ada
+                                <br>
+                                <a href="#edit-verifikasi" class=" small" data-toggle="collapse">2 informasi</a>
+                                <span class="collapse" id="edit-verifikasi_ket">
+                                    untuk editor
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row row-tight">
+                        <div class="col-sm-12">
+                            <div class="col-sm-6">
+                                <label class="control-label">Foto</label>
+                                <a href="#edit-verifikasi" class=" small" data-toggle="collapse">4 foto</a>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="col-sm-4" style="padding-bottom: 10px;">
+                                    <a href="#" class="thumbnail thumbnail-warp" style="margin-bottom:0px">
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/01/3e/ce/alam-wisata-cimahi-awc.jpg" alt="#" >
+                                    </a>
+                                    <span class="row-posted">
+                                        <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                        <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                        <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> <br>
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                    </span>
+                                </div>
+                                <div class="col-sm-4" style="padding-bottom: 10px;">
+                                    <a href="#" class="thumbnail thumbnail-warp" style="margin-bottom:0px">
+                                        <img src="https://img.ifcdn.com/images/40d55179818e5acc595735d4d87c48bcd95afbbf423dc5e1da0270b57be0c5bb_1.jpg" alt="#" >
+                                    </a>
+                                    <span class="row-posted">
+                                        <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                        <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                        <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> <br>
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                    </span>
+                                </div>
+                                <div class="col-sm-4" style="padding-bottom: 10px;">
+                                    <a href="#" class="thumbnail thumbnail-warp" style="margin-bottom:0px">
+                                        <img src="http://wa2010.kabarkita.org/files/images/dsc_2065-rambu-lalu-lintas-cimahi.preview.jpg" alt="#" >
+                                    </a>
+                                    <span class="row-posted">
+                                        <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                        <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                        <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> <br>
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                    </span>
+                                </div>
+                                <div class="col-sm-4" style="padding-bottom: 10px;">
+                                    <a href="#" class="thumbnail thumbnail-warp" style="margin-bottom:0px">
+                                        <img src="https://bkuproject.files.wordpress.com/2010/12/3.jpg" alt="#" >
+                                    </a>
+                                    <span class="row-posted">
+                                        <strong>Informasi oleh : </strong><a href=# class="usrname-mas">John</a>
+                                        <strong>pada : </strong><span class="postdate">10:00, 20 Juli 2016</span> &nbsp;
+                                        <a href="#" class="label label-verified-not"  title="Informasi tidak lengkap">Tidak lolos verifikasi</a> <br>
+                                        <a href="#" id="thums-up"> <span class=" glyphicon glyphicon-thumbs-up"></span> 0</a> &nbsp;
+                                        <a href="#" id="thums-down"> <span class=" glyphicon glyphicon-thumbs-down"></span> 0</a> &nbsp;
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- infos & comments ends here -->
+
+            <div class="row">
+
+                <div class="row draft-detail card-border">
+                    <h4>Komentar dan Timbal balik dari Pemerintah</h4>
+
+                    <div class="row row-tight">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="row row-tight form-inline">
+                                    <label for="comment">Dipasang sebagai</label>
+                                    <span class="form-group">
+                                        <select class="form-control" id="tipe_tibalik">
+                                            <option>Komentar</option>
+                                            <option>Request Informasi</option>
+                                        </select>
+                                    </span>
+
+                                </div>
+
+
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <button type="submit" class="btn btn-default pull-right">Submit</button>
+                            </div>
+                            <div class="col-md-12 comment">
+
+                                <div class="row row-tight">
+                                    <a href="#" class="label label-usulan">Komentar</a>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis.
+                                </div>
+                                <div class="row row-posted row-tight">
+                                    <a href=# class="usrname-mas">John</a>
+                                    pada : <span class="postdate">10:00, 20 Juli 2016</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 comment background-grey">
+
+                                <div class="row row-tight">
+                                    <a href="#" class="label label-usulan">Request Informasi</a>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada eget lectus eget mattis.
+                                </div>
+                                <div class="row row-posted row-tight">
+                                    <a href=# class="usrname-pem">Lenon</a>
+                                    pada : <span class="postdate">10:00, 20 Juli 2016</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+    <div class="container footer">
+        <p>
+            Dhendiawan Dwiatma | 18210002 © 2016
+        </p>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="/js/panel.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script><!-- Bootstrap -->
+
+    <!-- <script src="/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    <!-- initiate tooltip -->
+    <script type="text/javascript">
+    $(function(){
+        $('body').tooltip({ selector: '[data-toggle="tooltip"]' });
+    });
+    </script>
+</body>
+</html>

@@ -40,7 +40,7 @@
     margin-bottom:5px;
     padding-top:5px;
     padding-left: 10px;
-    padding-bottom: 5px;
+    padding-bottom:     5px;
 }
 
 .row-tags{
@@ -51,23 +51,23 @@
 .row-bottomlink{
     font-weight: lighter;
     font-size: 95%;
-    color:#888;
+    /*color:#888;*/
     margin-bottom: 2px;
 }
 
 .row-bottomlink a{
-    color:#888;
+    /*color:#888;*/
 }
 
 .row-bottomlink a[href]:hover
 .row-bottomlink a[href]:focus{
-    color:#888;
+    /*color:#888;*/
 }
 
 .rank{
     font-size: 18px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .rank-vote{
@@ -78,25 +78,35 @@
 }
 
 .location {
-    color: #55BEE8;
+    color: #E37623;
 }
 .location[href]:hover,
 .location[href]:focus {
+  color: #7F4214;
+}
+
+
+.usrname-mas {
+    color: #55BEE8;
+}
+
+.usrname-mas[href]:hover,
+.usrname-mas[href]:focus {
   color: #2F687F;
 }
 
-
-.usrname {
+.usrname-pem {
     color: #0E9547;
 }
 
-.usrname[href]:hover,
-.usrname[href]:focus {
+.usrname-pem[href]:hover,
+.usrname-pem[href]:focus {
   color: #06401E;
 }
 
+
 .postdate {
-    color: #18A7E0;
+    color: #E37623;
 }
 
 .label-tag {
@@ -219,4 +229,42 @@
 .row-tight {
     margin-left:0px;
     margin-right:0px;
+}
+
+.card-border{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #f3f3f3;
+}
+
+.draft-detail{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:0px;
+    margin-right:0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.add-padding-bottom{
+    padding-bottom:10px;
+}
+
+.thumbnail-warp{
+    margin-bottom: 0px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail-warp img{
+    width: auto;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+
 }
